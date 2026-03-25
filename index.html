@@ -145,6 +145,70 @@
         </div>
     </section>
 
+    <!-- Appointment Form Section -->
+    <section class="appointment-form-section" id="appointment">
+        <div class="section-container">
+            <div class="form-wrapper">
+                <div class="form-content">
+                    <h2>Book Your Appointment</h2>
+                    <p>Schedule a consultation with our medical professionals today</p>
+                    
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Select Service</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Choose a service...</option>
+                                    <option value="laboratory">Laboratory Tests</option>
+                                    <option value="dental">Dental Care</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Additional Notes</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your health concern..." rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">Book Appointment</button>
+                    </form>
+                </div>
+
+                         </div>
+        </div>
+    </section>
+
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="section-container">
@@ -240,21 +304,27 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-image"><img src="images/doc2.png" alt="doctor"></div>
+                    <div class="team-member-image">
+                        <img src="images/doc2.png" alt="doctor">
+                    </div>
                     <div class="team-member-info">
                         <div class="team-member-name">Dr. Sarah Williams</div>
                         <div class="team-member-role">Cardiologist</div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-image"><img src="images/doc2.png" alt="doctor"></div>
+                    <div class="team-member-image">
+                        <img src="images/doc2.png" alt="doctor">
+                    </div>
                     <div class="team-member-info">
                         <div class="team-member-name">Dr. James Brown</div>
                         <div class="team-member-role">Neurologist</div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-image"><img src="images/doc2.png" alt="doctor"></div>
+                    <div class="team-member-image">
+                        <img src="images/doc2.png" alt="doctor">
+                    </div>
                     <div class="team-member-info">
                         <div class="team-member-name">Dr. Emily Davis</div>
                         <div class="team-member-role">Pediatrician</div>
