@@ -1314,6 +1314,9 @@ body {
 .floating-card{
 position: relative;
 bottom: auto;
+top: auto;
+left: auto;
+right: auto;
 width: 100%;
 max-width: none;
 margin: 1rem 0;
@@ -1330,8 +1333,10 @@ padding: 1rem 1.2rem;
     font-size: 0.75rem;
 }
     .hero-stats {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .features-grid,
@@ -1359,13 +1364,12 @@ padding: 1rem 1.2rem;
  .appointment-form-section {
         padding: 3rem 1.5rem;
         margin-top: 2rem;
-    }
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 2rem;
     }
 
     .form-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 1rem;
     }
 
@@ -1390,7 +1394,6 @@ padding: 1rem 1.2rem;
     .form-icon {
         font-size: 80px;
     }
-
 
 @media (max-width: 480px) {
     .hero-title {
