@@ -280,23 +280,35 @@
         }
 
         .hero-image {
-            position: relative;
+           position: relative;
             height: 400px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 100px;
+           object-fit: cover;
+           object-position: center;
+           display: flex;
+           justify-content: center;
+        }
+        .short-title{
+            padding: 12px;
+            width: 100%;
+            background-color: rgba(1, 221, 221, 0.5);
+            position: absolute;
+            z-index: 3;
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-dark);
+            bottom: 20px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s 1s 1;
         }
 
         /* ============ SERVICES SECTION ============ */
         .services {
             padding: 100px 40px;
             background: var(--bg-white);
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='32' height='32' patternTransform='scale(2) rotate(15)'><rect x='0' y='0' width='100%' height='100%' fill='%23bb6b2500'/><path d='M37.657 10.343l-4.243 4.243m-2.828 2.828l-4.243 4.243m11.314 0l-4.243-4.243m-2.828-2.828l-4.243-4.243m-20.686 0l-4.243 4.243m-2.828 2.828l-4.243 4.243m11.314 0l-4.243-4.243m-2.828-2.828l-4.243-4.243'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='%2302a6f245' fill='none'/><path d='M16-8v6m0 4v6m8-8h-6m-4 0H8m8 24v6m0 4v6m8-8h-6m-4 0H8'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='%23dda25f45' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-92,-50)' fill='url(%23a)'/></svg>")
         }
 
         .section-header {
@@ -372,6 +384,7 @@
         .about {
             padding: 100px 40px;
             background: var(--bg-light);
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%232b2b3100'/><path d='M45.69 13.342c-1.677.945-3.557 1.6-5.48 1.588-1.922-.012-3.795-.691-5.462-1.653-1.668-.962-3.156-2.202-4.637-3.435-1.48-1.232-2.97-2.47-4.641-3.427-1.67-.957-3.547-1.628-5.47-1.628-1.923 0-3.8.67-5.47 1.628-1.67.956-3.161 2.195-4.641 3.427-1.48 1.233-2.97 2.473-4.637 3.435-1.667.962-3.54 1.641-5.463 1.653-1.922.012-3.802-.643-5.478-1.588v13.316c1.676-.945 3.556-1.6 5.478-1.588 1.923.012 3.796.691 5.463 1.653 1.668.962 3.156 2.202 4.637 3.435 1.48 1.232 2.97 2.47 4.641 3.427 1.67.957 3.547 1.628 5.47 1.628 1.923 0 3.8-.67 5.47-1.628 1.67-.956 3.161-2.195 4.641-3.427 1.48-1.233 2.97-2.473 4.637-3.435 1.667-.962 3.54-1.641 5.463-1.653 1.922-.012 3.802.643 5.478 1.588z'  stroke-width='1' stroke='%2302a6f224' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
         }
 
         .about-content {
@@ -390,10 +403,9 @@
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 150px;
+            object-fit: cover;
+            object-position: center;
         }
 
         .about-text h2 {
@@ -445,6 +457,7 @@
         .departments {
             padding: 100px 40px;
             background: var(--bg-white);
+background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%232b2b3100'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linecap='square' stroke-width='1' stroke='%23ecc94b23' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linecap='square' stroke-width='1' stroke='%2302a6f224' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
         }
 
         .departments-grid {
@@ -500,6 +513,7 @@
         .doctors {
             padding: 100px 40px;
             background: var(--bg-light);
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='32' height='32' patternTransform='scale(2) rotate(15)'><rect x='0' y='0' width='100%' height='100%' fill='%23bb6b2500'/><path d='M37.657 10.343l-4.243 4.243m-2.828 2.828l-4.243 4.243m11.314 0l-4.243-4.243m-2.828-2.828l-4.243-4.243m-20.686 0l-4.243 4.243m-2.828 2.828l-4.243 4.243m11.314 0l-4.243-4.243m-2.828-2.828l-4.243-4.243'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='%2302a6f245' fill='none'/><path d='M16-8v6m0 4v6m8-8h-6m-4 0H8m8 24v6m0 4v6m8-8h-6m-4 0H8'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='%23dda25f45' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-92,-50)' fill='url(%23a)'/></svg>")
         }
 
         .doctors-grid {
@@ -550,6 +564,7 @@
             gap: 16px;
             opacity: 0;
             transition: var(--transition);
+            
         }
 
         .doctor-card:hover .doctor-social {
@@ -559,9 +574,11 @@
         .doctor-social a {
             width: 40px;
             height: 40px;
+            font-size: 24px;
+            text-decoration: none;
             background: var(--accent);
             color: white;
-            border-radius: 50%;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -689,6 +706,7 @@
         .testimonials {
             padding: 100px 40px;
             background: var(--bg-white);
+                        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%232b2b3100'/><path d='M45.69 13.342c-1.677.945-3.557 1.6-5.48 1.588-1.922-.012-3.795-.691-5.462-1.653-1.668-.962-3.156-2.202-4.637-3.435-1.48-1.232-2.97-2.47-4.641-3.427-1.67-.957-3.547-1.628-5.47-1.628-1.923 0-3.8.67-5.47 1.628-1.67.956-3.161 2.195-4.641 3.427-1.48 1.233-2.97 2.473-4.637 3.435-1.667.962-3.54 1.641-5.463 1.653-1.922.012-3.802-.643-5.478-1.588v13.316c1.676-.945 3.556-1.6 5.478-1.588 1.923.012 3.796.691 5.463 1.653 1.668.962 3.156 2.202 4.637 3.435 1.48 1.232 2.97 2.47 4.641 3.427 1.67.957 3.547 1.628 5.47 1.628 1.923 0 3.8-.67 5.47-1.628 1.67-.956 3.161-2.195 4.641-3.427 1.48-1.233 2.97-2.473 4.637-3.435 1.667-.962 3.54-1.641 5.463-1.653 1.922-.012 3.802.643 5.478 1.588z'  stroke-width='1' stroke='%2302a6f224' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
         }
 
         .testimonials-container {
@@ -767,6 +785,7 @@
         .blog {
             padding: 100px 40px;
             background: var(--bg-light);
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%232b2b3100'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linecap='square' stroke-width='1' stroke='%23ecc94b23' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linecap='square' stroke-width='1' stroke='%2302a6f224' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
         }
 
         .blog-grid {
@@ -986,6 +1005,7 @@
 
             .navbar-content {
                 padding: 12px 20px;
+
             }
 
             .nav-menu {
@@ -1017,11 +1037,19 @@
 
             .hamburger {
                 display: flex;
+                position: absolute;
+                right: 20px;
+            }
+            .logo{
+                position: absolute;
+                left: 20px;
             }
 
             .btn-appointment {
                 padding: 8px 16px;
                 font-size: 12px;
+                position: absolute;
+                right: 55px;
             }
 
             .hero {
@@ -1038,17 +1066,18 @@
             }
 
             .hero-buttons {
-                flex-direction: column;
+                flex-direction: row;
             }
 
-            .btn-primary,
+            .btn-primary {
+                width: 40%;
+            }
             .btn-secondary {
-                width: 100%;
+                width: 20%;
             }
 
             .hero-image {
-                height: 300px;
-                font-size: 60px;
+                min-height: 400px;
             }
 
             .services,
@@ -1238,12 +1267,15 @@
                 <p class="hero-subtitle">Experience premium healthcare with our team of expert doctors and state-of-the-art facilities. We're committed to providing you with the best medical care.</p>
                 <div class="hero-buttons">
                     <button class="btn-primary">Book Now</button>
-                    <button class="btn-secondary">Learn More</button>
+                    <div class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                    </div> 
                 </div>
             </div>
             <div class="hero-right">
+                <div class="short-title">We are here for you</div>
                 <div class="hero-image">
-                    <i class="fas fa-stethoscope"></i>
+                    <img src="images/doctors.png" alt="hospital">
                 </div>
             </div>
         </div>
@@ -1305,7 +1337,7 @@
     <section class="about" id="about">
         <div class="about-content">
             <div class="about-image">
-                <i class="fas fa-hospital"></i>
+               <img src="images/hospital.jpg" alt="hospital">
             </div>
             <div class="about-text">
                 <h2>About MedCare Pro</h2>
@@ -1547,7 +1579,7 @@
         <div class="blog-grid">
             <div class="blog-card">
                 <div class="blog-image">
-                    <i class="fas fa-heartbeat"></i>
+                    <img src="images/post1.jpg" alt="post">
                     <div class="blog-date">Mar 15, 2024</div>
                 </div>
                 <div class="blog-content">
@@ -1560,7 +1592,7 @@
             </div>
             <div class="blog-card">
                 <div class="blog-image">
-                    <i class="fas fa-bed"></i>
+                    <img src="images/post2.jpg" alt="post">
                     <div class="blog-date">Mar 10, 2024</div>
                 </div>
                 <div class="blog-content">
@@ -1573,7 +1605,7 @@
             </div>
             <div class="blog-card">
                 <div class="blog-image">
-                    <i class="fas fa-dumbbell"></i>
+                   <img src="images/post3.jpg" alt="post">
                     <div class="blog-date">Mar 5, 2024</div>
                 </div>
                 <div class="blog-content">
